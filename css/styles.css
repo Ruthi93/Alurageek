@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#product-list, #add-product {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(33% - 2rem);
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+#product-form input {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#product-form button {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-form button[type="reset"] {
+    background-color: #f44336;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+.product-image {
+    width: 150px;  /* Cambia este valor según el tamaño deseado */
+    height: 150px;  /* Mantiene la proporción de la imagen */
+}

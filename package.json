@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  },
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Tienda",
+  "main": "index.js",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "scripts": {
+    "start": "cross-env-shell \"(copy db-backup.json db.json || cp db-backup.json db.json) && npx json-server --watch db.json --port 3001\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruth93",
+  "license": "ISC"
+}
